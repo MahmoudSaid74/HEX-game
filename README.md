@@ -1,1 +1,2 @@
-# HEX-game
+# HEX-game this hello 
+
