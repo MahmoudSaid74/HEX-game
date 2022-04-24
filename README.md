@@ -9,5 +9,5 @@ such as tic tac toe ,chess and connect four.
 The algorithm goes throw all possible places and measure the value related to moving towards this place, then it measures 
 the consequences of all moves by the opponent and so on. The data structure used in this algorithm is trees.
 
-- https://www.onlinegdb.com/online_c++_compiler here is online compiler
+- https://www.onlinegdb.com/online_c++_compiler here is C++ online compiler
 - https://drive.google.com/drive/u/0/folders/1vxFZEI77IAAtIiEDy8DRGXtjcBhPR2Ik here is video link 
