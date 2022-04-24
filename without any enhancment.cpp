@@ -628,8 +628,6 @@ int main(int argc, char *argv[]) {
   bool HumanVsHuman = false;
   double num_trial = 1000.0;
   std::cout << "\n***Usage: ./Hex dimension HumanVsHuman***\n";
-  std::cout << "2 arguments optional : num_rows, HumanvsHuman > 0 (=true).  \n";
-  std::cout << "Default dimension : 7 . Human plays against machine\n";
   std::cout
       << "Player should hit row number enter button, then column enter.\n\n";
   if (argc == 2) {
