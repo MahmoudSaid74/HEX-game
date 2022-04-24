@@ -666,9 +666,7 @@ private:
 //=================================================================================================================
 int getOnlyNumber(int num)
 {
- //time complexity of this following function is O(n^3) and limit user to use dimension of [3 to 16] so we will use another implementation to inhance it's performance of O(1)
     
-    /*          
     bool flag = num;
     while (!(cin >> num)) {
         // Reset the input:
@@ -683,7 +681,7 @@ int getOnlyNumber(int num)
     }
     if (flag)goto label;
     else
-        while (num > 16 || num < 3) {
+        while (num > 25 || num < 4) {
             cout << "please, enter valid number\n";
             while (!(cin >> num)) {
                 // Reset the input:
@@ -699,7 +697,9 @@ int getOnlyNumber(int num)
         }
 label:
     return num;
-    */
+     //time complexity of this following function is O(n^3) but it is better in test case, it limits user to use dimension of [4 to 25] so we will use this implementation in enhancement, next implementation of order O(1)
+
+    /*
     std::string num1;
     std::cin >> num1;
     double num_dim = 9.0;
@@ -708,6 +708,7 @@ label:
             std::cout << "Not a number -> default value chosen (9)\n";
         }
         return num_dim;
+        */
         //time complexity is O(1)
 }
 
@@ -716,7 +717,7 @@ int main(int argc, char* argv[]) {
 
     int num_rows = 0;
     std::cout << "welcome to HEX-game\n";
-    std::cout << "please enter number of rows you prefer to play \n";
+    std::cout << "please enter number of rows you prefer to play of range[4-25]\n";
     num_rows = getOnlyNumber(0);
 
     int HumanVsHuman;
