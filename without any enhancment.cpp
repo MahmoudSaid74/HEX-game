@@ -39,6 +39,7 @@ Licensing provisions:
    Player should hit row number enter button,
    then column enter.
 */
+/* Class grapgh is used for building the structure of the game through controlling the vertex. */
 class Graph {
 public:
   Graph(const size_t size = 7) : num_vertex(size) {
