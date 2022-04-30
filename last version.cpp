@@ -157,6 +157,7 @@ protected:
 // Hex child class of Graph
 // See https://en.wikipedia.org/wiki/Hex_(board_game)
 // Pair (distance from source , node idx)
+/*Hex class uses graph class to build the game depending on the inputs from the user or the machine.*/
 typedef std::pair<float, size_t> ds_nidx;
 class Hex : public Graph {
 public:
