@@ -43,6 +43,8 @@ Licensing provisions:
     Player should hit row number enter button,
     then column enter.
  */
+/*Graph class is used for building the structure of the game by controlling the vertex and the edge.It can use various data structures like 
+arrays, queues,... to update the vertex.  */
 class Graph {
 public:
     Graph(const size_t size = 7) : num_vertex(size) {
