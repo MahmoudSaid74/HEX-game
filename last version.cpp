@@ -213,7 +213,8 @@ public:
     // Forbid copy constructor since we do not want to use it here
     Hex(const Hex&) = delete;
     //---------------------------------------------------------------
-    void display_game() {
+ /*It shows how the game is displayed in terminal window.*/   
+ void display_game() {
         for (size_t i = 0; i < num_cols; ++i) {
             std::cout << std::string(2 * i, ' ');
             for (size_t j = 0; j < num_cols; ++j) {
