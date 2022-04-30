@@ -245,7 +245,8 @@ public:
         }//time complexity=O(n^2)
     }/*Overall time complexity=O(n^2)*/
     //-------------------------------------------------------------------------
-    bool game_over(std::string request_player, size_t num_trial) {
+  /*Deciding the result of the game dpending on the various cases.*/  
+ bool game_over(std::string request_player, size_t num_trial) {
 
         if (game_it == 0 && !m_HvsH) {
             if (request_player == "x" || request_player == "X") {
