@@ -546,9 +546,7 @@ private:
         }
     }//time complexity is O(1)
     //---------------------------------------------------------------------------------------
-      // Finds shortest paths from src to all other vertices with 
-      // union–find data structure 
-      // see https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+      /* union–find data structure is used for Finding shortest paths from src to all other vertices. */
     bool UnionFind(const std::vector<size_t>& BorderMin,
         const std::string& current_player,
         const std::vector<std::string>& vertice_name) {
