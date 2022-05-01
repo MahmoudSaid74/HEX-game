@@ -751,7 +751,7 @@ int main(int argc, char* argv[]) {
     }
     std::cout << "Hex dimension " << num_rows << "\n";
     if (HumanVsHuman) {
-        std::cout << "Human Vs Human \n";
+        std::cout << "Human Vs Human \n\n";
     }
     else {
         std::cout << "Human Vs machine \n\n";
