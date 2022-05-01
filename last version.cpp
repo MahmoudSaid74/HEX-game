@@ -667,10 +667,9 @@ private:
 //-----------------------------------------------------------------------------------------    
 };
 //=================================================================================================================
-int getOnlyNumber(int num)
+int getOnlyNumber1()
 {
-    
-    bool flag = num;
+    int num;
     while (!(cin >> num)) {
         // Reset the input:
         cin.clear();
@@ -682,8 +681,7 @@ int getOnlyNumber(int num)
         // Ask user to try again:
         cout << "Please enter a number :  ";
     }
-    if (flag)goto label;
-    else
+   
         while (num > 25 || num < 4) {
             cout << "please, enter valid number\n";
             while (!(cin >> num)) {
@@ -698,9 +696,8 @@ int getOnlyNumber(int num)
                 cout << "Please enter a number :  ";
             }
         }
-label:
-    return num;
-     //time complexity of this following function is O(n^3) but it is better in test case, it limits user to use dimension of [4 to 25] so we will use this implementation in enhancement, next implementation of order O(1)
+        return num;
+          //time complexity of this following function is O(n^3) but it is better in test case, it limits user to use dimension of [4 to 25] so we will use this implementation in enhancement, next implementation of order O(1)
 
     /*
     std::string num1;
@@ -713,7 +710,21 @@ label:
         return num_dim;
         */
         //time complexity is O(1)
+
+} 
+
+bool getOnlyNumber2()
+{
+    std::string num1;
+    std::cin >> num1;
+    double num_dim = 1.0;
+    if (!(std::stringstream(num1) >> num_dim)) {
+            num_dim = 1.0;
+        }
+        return num_dim;
 }
+
+   
 
 //===========================================================================================
 int main(int argc, char* argv[]) {
@@ -721,12 +732,12 @@ int main(int argc, char* argv[]) {
     int num_rows = 0;
     std::cout << "welcome to HEX-game\n";
     std::cout << "please enter number of rows you prefer to play of range[4-25]\n";
-    num_rows = getOnlyNumber(0);
+    num_rows = getOnlyNumber1();
 
     int HumanVsHuman;
     std::cout << "for [human vs machine] enter 0\n";
     std::cout << "for [human vs human] enter any other Input\n";
-    HumanVsHuman = getOnlyNumber(1);
+    HumanVsHuman = getOnlyNumber2();
     double num_trial = 1000.0;
 
     std::cout
