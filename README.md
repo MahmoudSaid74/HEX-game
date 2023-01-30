@@ -11,8 +11,10 @@ such as tic tac toe ,chess and connect four.
 
 - https://www.onlinegdb.com/online_c++_compiler here is C++ online compiler
 - https://drive.google.com/drive/u/0/folders/1vxFZEI77IAAtIiEDy8DRGXtjcBhPR2Ik here is video link 
+
 - By:
-- الاسم:محمد محسن كمال موسى              sec:3 BN:46
-- الاسم:محمود سعيد عبد العزيز محمد      sec:4 BN:02
-- الاسم:مصطفى اسماعیل محمد سلیمان       sec:4 BN:12
+ - محمد محسن كمال موسى              
+ - محمود سعيد عبد العزيز محمد      
+ - مصطفي اسماعیل محمد سلیمان 
+      
 - HAVE FUN TO OUR GAME!
